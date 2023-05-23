@@ -132,7 +132,6 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
     ```
     Unauthorized
     ```
-    ```
     - Status : 404 (Not Found)
     ```
     {
