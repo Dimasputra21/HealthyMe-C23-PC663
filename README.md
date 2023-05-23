@@ -49,4 +49,29 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
                    - password as String
   * Response :
     - Status : 200 (Success)
-     
+    ```
+    {
+     "userId": "user-nEDmB38XF4",
+     "name": "dimas",
+     "userEmail": "dimas@gmail.com",
+     "accessToken":   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLW5FRG1CMzhYRjQiLCJuYW1lIjoiZGltYXMiLCJ1c2VyRW1haWwiOiJkaW1hc0BnbWFpbC5jb20iLCJpYXQiOjE2ODQ4MjI1MjQsImV4cCI6MTY4NDgyOTcyNH0.ej7xtO-_M4ec4nSoVlJrA9jiUd2GlvSxS3GZ-aatVA8"
+    }
+    ```
+    - Status : 400 (Bad Request)
+    ```
+    {
+     success: false,
+     statusCode: res.statusCode,
+     msg: "Password Salah!",
+    }
+    ```
+    ```
+    {
+     success: false,
+     statusCode: res.statusCode,
+     error: {
+        msg: "Email tidak ditemukan, Register terlebih dahulu!",
+        uri: req.originalUrl
+        }
+    }
+    ```
