@@ -141,4 +141,13 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
     }
     ```
     
+- **Change Password**
+  * URL Route : /ubahPassword/:id
+  * Method : PUT
+  * Headers (Middleware)
+    - `Authorization` : `Bearer Token`
+   
+  * Response : 
+    - Status : 200 (Success)
+    
     
