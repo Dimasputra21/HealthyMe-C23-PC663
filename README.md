@@ -17,7 +17,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
                    - email as STRING (unique)
                    - password as STRING
                    
- * Response : 
+  * Response : 
     - Status : 200 (Success)
     ```
     {
@@ -26,7 +26,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
       msg: "Register Sukses"
     }
     ```
-   - Status : 400 (Bad Request)
+    - Status : 400 (Bad Request)
     ```
     {
      success: false,
