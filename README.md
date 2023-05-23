@@ -6,3 +6,4 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
 - Public Domain : healthyme-auth.et.r.appspot.com
 
 ## Endpoint URL Route
+- **REGISTER**
