@@ -47,6 +47,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
   * Method : POST
   * Request Body : - email as String
                    - password as String
+                   - 
   * Response :
     - Status : 200 (Success)
     ```
@@ -75,3 +76,9 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
         }
     }
     ```
+    
+- **GET ALL USERS**
+  * URL Route : /users/
+  * Method : GET,
+  * Headers (Middleware)
+    - `Authorization` : `Bearer Token`
