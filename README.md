@@ -108,7 +108,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
     Unauthorized
     ```
     
-- **GET USER BY ID"
+- **GET USER BY ID**
   * URL Route : /users/:id
   * Method : GET,
   * Headers (Middleware)
