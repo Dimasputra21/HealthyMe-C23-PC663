@@ -41,3 +41,12 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
      msg: "Email sudah terdaftar, mohon pakai email lain!",
     }
     ```
+ 
+- **LOGIN**
+  * URL Route : /login/
+  * Method : POST
+  * Request Body : - email as String
+                   - password as String
+  * Response :
+    - Status : 200 (Success)
+     
