@@ -22,7 +22,15 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
     ```
     {
       success: true,
-      statusCode: res.statusCode,
+      statusCode: 200,
       msg: "Register Sukses"
+    }
+    ```
+   - Status : 400 (Bad Request)
+    ```
+    {
+     success: false,
+     statusCode: res.statusCode,
+     msg: "Mohon isi semua kolom!"
     }
     ```
