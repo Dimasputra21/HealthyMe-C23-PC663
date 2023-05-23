@@ -197,3 +197,35 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
   * Response : 
   
     - Status : 200 (Success)
+    ```
+    {
+     "success": true,
+     "statusCode": 200,
+     "msg": "Perubahan Berhasil"
+    }
+    ```
+    - Status : 404 (Not Found)
+    ```
+    {
+     "success": false,
+     "statusCode": res.statusCode,
+     "msg": "User Tidak Dapat Ditemukan"
+    }
+    ```
+    
+- **LOGOUT**
+  * URL Route : /logout/
+  * Method : DELETE
+  * Headers (Middleware)
+    - `Authorization` : `Bearer Token`
+  * Response :
+    
+    - Status : 200 (Success)
+    ```
+    {
+     "success": true,
+     "statusCode": res.statusCode,
+     "msg": "Logout Berhasil"
+    }
+    ```
+    
