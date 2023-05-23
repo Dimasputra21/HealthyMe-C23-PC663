@@ -1,0 +1,50 @@
+GET http://localhost:5000/users
+
+
+###
+GET  http://localhost:5000/users/:id
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "g",
+    "email": "g@gmail.com",
+    "password": "12345678"
+}
+
+###
+PUT http://localhost:5000/ubahPassword/:id
+Content-Type: application/json
+
+{
+    "currentPass": "",
+    "newPass": "",
+    "confPass": "",
+}
+
+
+###
+PUT http://localhost:5000/editUser/:id
+Content-Type: application/json
+
+{
+    "name": "",
+    "email": "",
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "g@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
