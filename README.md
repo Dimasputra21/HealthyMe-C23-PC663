@@ -47,7 +47,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
   * Method : POST
   * Request Body : - email as String
                    - password as String
-                   - 
+         
   * Response :
     - Status : 200 (Success)
     ```
@@ -82,3 +82,64 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
   * Method : GET,
   * Headers (Middleware)
     - `Authorization` : `Bearer Token`
+    
+  * Response : 
+    - Status : 200 (Success)
+    ```
+    {
+     "success": true,
+     "statusCode": 200,
+     "users": [
+       {
+         "id": "user-nEDmB38XF4",
+         "name": "dimas",
+         "email": "dimas@gmail.com"
+       },
+       {
+         "id": "user-XYs03d_yrl",
+         "name": "g",
+         "email": "tidakada@gmail.com"
+       }
+     ]
+    }
+    ```
+    - Status : 401 (Unauthorized)
+    ```
+    Unauthorized
+    ```
+    
+- **GET USER BY ID"
+  * URL Route : /users/:id
+  * Method : GET,
+  * Headers (Middleware)
+    - `Authorization` : `Bearer Token`
+   
+  * Response : 
+    - Status : 200 (Success)
+    ```
+    {
+      "success": true,
+      "statusCode": 200,
+      "msg": "User Ditemukan",
+      "user": {
+         "id": "user-nEDmB38XF4",
+         "name": "dimas",
+         "email": "dimas@gmail.com"
+         }
+    }
+    ```
+    - Status : 401 (Unauthorized)
+    ```
+    Unauthorized
+    ```
+    ```
+    - Status : 404 (Not Found)
+    ```
+    {
+     "success": false,
+     "statusCode": 404,
+     "msg": "Data User Tidak Dapat Ditemukan"
+    }
+    ```
+    
+    
