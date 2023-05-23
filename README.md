@@ -22,24 +22,24 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
     - Status : 200 (Success)
     ```
     {
-      success: true,
-      statusCode: 200,
-      msg: "Register Sukses"
+      "success": true,
+      "statusCode": 200,
+      "msg": "Register Sukses"
     }
     ```
     - Status : 400 (Bad Request)
     ```
     {
-     success: false,
-     statusCode: 400,
-     msg: "Mohon isi semua kolom!"
+     "success": false,
+     "statusCode": 400,
+     "msg": "Mohon isi semua kolom!"
     }
     ```
     ```
     {
-     success: false,
-     statusCode: 400,
-     msg: "Email sudah terdaftar, mohon pakai email lain!",
+     "success": false,
+     "statusCode": 400,
+     "msg": "Email sudah terdaftar, mohon pakai email lain!",
     }
     ```
  
@@ -63,18 +63,18 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
     - Status : 400 (Bad Request)
     ```
     {
-     success: false,
-     statusCode: 400,
-     msg: "Password Salah!",
+     "success": false,
+     "statusCode": 400,
+     "msg": "Password Salah!",
     }
     ```
     ```
     {
-     success: false,
-     statusCode: 400,
-     error: {
-        msg: "Email tidak ditemukan, Register terlebih dahulu!",
-        uri: /login
+     "success": false,
+     "statusCode": 400,
+     "error": {
+        "msg": "Email tidak ditemukan, Register terlebih dahulu!",
+        "uri": /login
         }
     }
     ```
@@ -143,7 +143,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
     }
     ```
     
-- **Change Password**
+- **CHANGE PASSWORD**
   * URL Route : /ubahPassword/:id
   * Method : PUT
   * Headers (Middleware)
@@ -185,3 +185,15 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
      "message": "User Tidak Dapat Ditemukan",
     }
     ```
+    
+- **EDIT DATA USER**
+  * URL Route : /editUser/:id
+  * Method : PUT
+  * Headers (Middleware)
+    - `Authorization` : `Bearer Token`
+  * Request Body : 
+    * `name` as String
+    * `email` as String
+  * Response : 
+  
+    - Status : 200 (Success)
