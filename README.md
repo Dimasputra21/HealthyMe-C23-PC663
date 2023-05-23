@@ -13,9 +13,10 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
 - **REGISTER**
   * URL Route : /register/
   * Method : POST
-  * Request Body : - name as STRING
-                   - email as STRING (unique)
-                   - password as STRING
+  * Request Body : 
+    * `name` as STRING
+    * `email` as STRING (unique)
+    * `password` as STRING
                    
   * Response : 
     - Status : 200 (Success)
@@ -45,8 +46,9 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
 - **LOGIN**
   * URL Route : /login/
   * Method : POST
-  * Request Body : - email as String
-                   - password as String
+  * Request Body :
+    * `email` as String
+    * `password` as String
          
   * Response :
     - Status : 200 (Success)
@@ -146,8 +148,40 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
   * Method : PUT
   * Headers (Middleware)
     - `Authorization` : `Bearer Token`
-   
+  * Request Body : 
+    * `currentPass` as String
+    * `newPass` as String
+    * `confPass` as String
   * Response : 
+  
     - Status : 200 (Success)
-    
-    
+    ```
+    {
+     "success": true,
+     "statusCode": 200,
+     "msg": "Perubahan Password Berhasil"
+    }
+    ```
+    - Status : 400 (Bad Request)
+    ```
+    {
+     "success": false,
+     "statusCode": 400,
+     "message": "Password Awal Salah"
+    }
+    ```
+    ```
+    {
+     "success": false,
+     "statusCode": 400,
+     "msg": "Password baru dan Konfirmasi Password Tidak Sesuai"
+    }
+    ```
+    - Status : 404 (Not Found)
+    ```
+    {
+     "success": false,
+     "statusCode": 404,
+     "message": "User Tidak Dapat Ditemukan",
+    }
+    ```
