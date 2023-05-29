@@ -3,6 +3,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
 ---
 ### Ini adalah Repository UTAMA dan hanya berisi file README dan Penjelasan Project, jika ingin melihat file atau dokumentasi REPO, bisa dilihat sesuai dengan branch-nya.
 ---
+### **Team Member**
 |**ID Member**|            **Nama**            |        **Asal Universitas**          |
 |-------------|:------------------------------:|:------------------------------------:|                                     
 | A147DSX3364 | Muslim Hakim Muhammad          | Universitas Bhayangkara Jakarta Raya |
