@@ -1,21 +1,26 @@
-GET http://localhost:5000/users
-
+GET http://localhost:5000/
 
 ###
-GET  http://localhost:5000/users/:id
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLWM3NWRwcFFySWwiLCJuYW1lIjoiZGltYXMiLCJ1c2VyRW1haWwiOiJkaW1hc0BnbWFpbC5jb20iLCJpYXQiOjE2ODUwODAxMjcsImV4cCI6MTY4NTA4NzMyN30.7FK_EQrrag081urO2GPm8EMOGM8IDJeAtBNTvuBPlzU
+
+###
+GET  http://localhost:5000/users/user-nEDmB38XF9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLW5FRG1CMzhYRjQiLCJuYW1lIjoiZGltYXMiLCJ1c2VyRW1haWwiOiJkaW1hc0BnbWFpbC5jb20iLCJpYXQiOjE2ODQ4MzU3MDksImV4cCI6MTY4NDg0MjkwOX0.Ihjzr65Z_2S90g0pMZSVuyiULaBfhpaWbcdYNHTuCII
 
 ###
 POST http://localhost:5000/register
 Content-Type: application/json
 
 {
-    "name": "g",
-    "email": "g@gmail.com",
+    "name": "mama",
+    "email": "mama@gmail.com",
     "password": "12345678"
 }
 
 ###
 PUT http://localhost:5000/ubahPassword/:id
+Authorization: Bearer 
 Content-Type: application/json
 
 {
@@ -27,6 +32,7 @@ Content-Type: application/json
 
 ###
 PUT http://localhost:5000/editUser/:id
+Authorization: Bearer 
 Content-Type: application/json
 
 {
@@ -39,12 +45,38 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "email": "g@gmail.com",
+    "email": "mama@gmail.com",
     "password": "12345678"
 }
 
 ###
 GET http://localhost:5000/token
+
+###
+GET http://localhost:5000/makanan
+
+###
+GET http://localhost:5000/makanan/food-uZ08wgf5Gp
+
+###
+POST http://localhost:5000/makanan/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLVQ4VVJrY21BREIiLCJuYW1lIjoibWFtYSIsInVzZXJFbWFpbCI6Im1hbWFAZ21haWwuY29tIiwiaWF0IjoxNjg1MzI5MjE3LCJleHAiOjE2ODUzMzY0MTd9.tyoX7MX2f3mtGeAe_zGBx1PaFc5ssKFhgpleHrcaXOU
+Content-Type: application/json
+
+{    
+    "name_food": "",
+    "kalori": "",
+    "protein": "",
+    "lemak": "",
+    "sodium": "",
+    "link_nutrisi": "",
+    "link_resep": "",
+    "ManisAsin": "",
+    "KuahKering": "",
+    "PedasTidak": "",
+    "TipeMakananVSD": "",
+    "HalalHaram": ""
+}
 
 ###
 DELETE http://localhost:5000/logout
