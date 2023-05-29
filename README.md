@@ -11,4 +11,8 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
 | M309DSX2925 | Muhammad Satria Ramadhani      | Universitas Pendidikan Indonesia     |
 | C151DKX4322 | Mochamad Dimas Putra Hermawan  | Universitas Brawijaya                |
 | C038DSX2202 | Halyusa Ard Wahyudi            | Institut Teknologi Sepuluh Nopember  |
+---
+|        **TEMA**      |     **JUDUL DAN IDE**   |        **DETAIL IDE**                |
+|----------------------|:-----------------------:|:------------------------------------:|         
+| Human HealthCare and Living Welbeings | "HealthyMe" Aplikasi perekomendasi makanan sehat sesuai keinginanmu | Aplikasi HealthyMe merupakan aplikasi untuk membantu anda mencari makanan favorit anda berdasarkan kesehatan anda(indeks massa), aplikasi ini akan membantu anda mencari makanan yang anda sukai sembari mendapatkan tubuh yang sehat |
 
