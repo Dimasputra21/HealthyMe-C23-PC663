@@ -9,7 +9,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
 
 ---
 
-## Endpoint URL Route (Dokumentasi)
+## Endpoint URL Route (Dokumentasi), (untuk dokumentasi versi POSTMAN bisa dilihat disini : .. )
 - **REGISTER**
   * URL Route : /register/
   * Method : POST
