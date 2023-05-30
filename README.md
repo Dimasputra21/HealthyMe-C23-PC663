@@ -9,7 +9,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
 
 ---
 
-## Endpoint URL Route
+## Endpoint URL Route (Dokumentasi), (untuk dokumentasi versi POSTMAN bisa dilihat disini : .. )
 - **REGISTER**
   * URL Route : /register/
   * Method : POST
@@ -210,6 +210,125 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
      "success": false,
      "statusCode": res.statusCode,
      "msg": "User Tidak Dapat Ditemukan"
+    }
+    ```
+    
+- **GET ALL MAKANAN**
+  * URL ROUTE : /makanan/
+  * Method : GET
+  * Response : 
+  
+    - Status : 200 (Success)
+    ```
+    {
+     "success": true,
+     "statusCode": 200,
+     "msg": "Berhasil mendapatkan data semua makanan",
+     "makanan": {
+         "id": "food-bz5XKXqmo_",
+         "name_food": "Oatmeal Instan (100 g)",
+         "kalori": "91",
+         "protein": "2.46",
+         "lemak": "1.2",
+         "sodium": "122",
+         "link_nutrisi": "https://www.fatsecret.co.id/kalori-gizi/umum/oatmeal-instan?portionid=53170&portionamount=100,000",
+         "link_resep": "https://www.sehatq.com/review/variasi-resep-oatmeal-antibosan-untuk-turunkan-berat-badan"
+       }
+    }
+    ```
+
+- **GET MAKANAN BY ID**
+  * URL Route : /makanan/:id
+  * Method : GET
+  * Response : 
+
+    - Status : 200 (Success)
+    ```
+    {
+      "success": true,
+      "statusCode": 200,
+      "msg": "Makanan Berhasil Ditemukan",
+      "makanan": {
+        "id": "food-mpR5pAdys4",
+        "name_food": "Rawon",
+        "kalori": "800",
+        "protein": "399",
+        "lemak": "888",
+        "sodium": "290",
+        "link_nutrisi": "https://www.rawon.com",
+        "link_resep": "https://www.rawon.com"
+      }
+    }
+    ```
+    - Status : 404 (Not Found)
+    ```
+    {
+      "success": false,
+      "statusCode": 404,
+      "msg": "Makanan Tidak Tersedia"
+    }
+    ```
+  
+- **CREATE MAKANAN**
+  * URL Route : /logout/
+  * Method : DELETE
+  * Headers (Middleware)
+    - `Authorization` : `Bearer Token`
+  * Response :
+  
+    - Status : 200 (Success)
+    ```
+    {
+      "success": true,
+      "statusCode": 201,
+      "msg": "Makanan baru berhasil dibuat",
+      "makanan": {
+        "id": "food-rx716UCg9H",
+        "name_food": "Rawon Makassar",
+        "kalori": "800",
+        "protein": "399",
+        "lemak": "888",
+        "sodium": "290",
+        "link_nutrisi": "https://www.rawon.com",
+        "link_resep": "https://www.rawon.com",
+        "ManisAsin": "Asin",
+        "KuahKering": "Kuah",
+        "PedasTidak": "Pedas",
+        "HalalHaram": "Haram",
+        "updatedAt": "2023-05-29T04:52:55.749Z",
+        "createdAt": "2023-05-29T04:52:55.749Z"
+      }
+    }
+    ```
+    - Status : 400 (Bad Request)
+    ```
+    {
+      "success": false,
+      "statusCode": 400,
+      "msg": "Harap masukkan data secara lengkap"
+    }
+    ```
+    ```
+    {
+      "success": false,
+      "statusCode": 400,
+      "msg": "Nama Makanan Sudah Pernah digunakan, Berikan Perbedaan!"
+    }
+    ```
+    - Status : 401 (Unauthorized)
+    ```
+    Unauthorized
+    ```
+    - Status : 403 (Forbidden)
+    ```
+    Forbidden
+    ```
+    - Status : 404 (Not Found)
+    ```
+    {
+      "success": false,
+      "statusCode": 400,
+      "msg": "User Tidak Ditemukan!"
     }
     ```
     
