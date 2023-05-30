@@ -16,8 +16,8 @@ router.post('/login', login);
 router.get('/token', refreshToken);
 router.delete('/logout', logout);
 
-router.get('/makanan', getMakanan);
-router.get('/makanan/:id', getMakananById);
+router.get('/makanan', verifyToken, getMakanan);
+router.get('/makanan/:id', verifyToken, getMakananById);
 router.post('/makanan/create', verifyToken, createNewMakanan);
 
 

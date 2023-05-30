@@ -54,28 +54,30 @@ GET http://localhost:5000/token
 
 ###
 GET http://localhost:5000/makanan
+Authorization: Bearer 
 
 ###
 GET http://localhost:5000/makanan/food-uZ08wgf5Gp
+Authorization: Bearer 
 
 ###
 POST http://localhost:5000/makanan/create
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLVQ4VVJrY21BREIiLCJuYW1lIjoibWFtYSIsInVzZXJFbWFpbCI6Im1hbWFAZ21haWwuY29tIiwiaWF0IjoxNjg1MzI5MjE3LCJleHAiOjE2ODUzMzY0MTd9.tyoX7MX2f3mtGeAe_zGBx1PaFc5ssKFhgpleHrcaXOU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLXlodFNpdjlrRGEiLCJuYW1lIjoibWFtYSIsInVzZXJFbWFpbCI6Im1hbWFAZ21haWwuY29tIiwiaWF0IjoxNjg1MzM0NDQ3LCJleHAiOjE2ODUzNDE2NDd9.NBqFP_-zlMAKJif0AmgN2jFG3UJ8MokYwSPcuLyVaJs
 Content-Type: application/json
 
 {    
-    "name_food": "",
-    "kalori": "",
-    "protein": "",
-    "lemak": "",
-    "sodium": "",
-    "link_nutrisi": "",
-    "link_resep": "",
-    "ManisAsin": "",
-    "KuahKering": "",
-    "PedasTidak": "",
-    "TipeMakananVSD": "",
-    "HalalHaram": ""
+    "name_food": "Oatmeal Instan (100 g)",
+    "kalori": "91",
+    "protein": "2.46",
+    "lemak": "1.2",
+    "sodium": "122",
+    "link_nutrisi": "https://www.fatsecret.co.id/kalori-gizi/umum/oatmeal-instan?portionid=53170&portionamount=100,000",
+    "link_resep": "https://www.sehatq.com/review/variasi-resep-oatmeal-antibosan-untuk-turunkan-berat-badan",
+    "ManisAsin": "Manis",
+    "KuahKering": "Kering",
+    "PedasTidak": "Tidak Pedas",
+    "TipeMakananVSD": "Vegetarian",
+    "HalalHaram": "Halal"
 }
 
 ###
