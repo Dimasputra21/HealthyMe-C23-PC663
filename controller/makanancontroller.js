@@ -1,17 +1,39 @@
 import Users from "../model/usermodel.js";
 import Makanan from "../model/makananmodel.js";
+import { Op } from "sequelize";
 
 export const getMakanan = async (req, res) => {
     try {
-        const makanan = await Makanan.findAll({
+        const getPagination = (page, size) => {
+            const limit = size ? +size : 2;
+            const offset = page ? page * limit : 0;
+
+            return { limit, offset };
+        };
+        const getPagingData = (data, page, limit) => {
+            const { count: totalItems, rows: Makanan } = data;
+            const currentPage = page ? +page : 0;
+            const totalPages = Math.ceil(totalItems / limit);
+
+            return { totalItems, Makanan, totalPages, currentPage };
+        };
+        const { page, size, id } = req.query;
+        var condition = id ? { id: { [Op.like]: `%${id}%` } } : null;
+
+        const { limit, offset } = getPagination(page, size);
+        Makanan.findAndCountAll({
+            where: condition, limit, offset,
             attributes: ["id", "name_food", "kalori", "protein", "lemak", "sodium", "link_nutrisi", "link_resep"]
-        });
-        res.json({
-            success: true,
-            statusCode: res.statusCode,
-            msg: "Berhasil mendapatkan data semua makanan",
-            makanan,
         })
+            .then(data => {
+                const response = getPagingData(data, page, limit);
+                res.json({
+                    success: true,
+                    statusCode: res.statusCode,
+                    msg: "Berhasil mendapatkan data semua makanan",
+                    response
+                });
+            })
     } catch (error) {
         console.log(error);
     }
@@ -47,7 +69,7 @@ export const createNewMakanan = async (req, res) => {
         tipeMakananVSD, HalalHaram } = req.body;
 
     if (!name_food || !kalori || !protein || !lemak || !sodium || !link_nutrisi ||
-         !link_resep)
+        !link_resep)
         return res.status(400).json({
             success: false,
             statusCode: res.statusCode,
