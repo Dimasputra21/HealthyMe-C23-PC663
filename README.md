@@ -214,8 +214,11 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
     ```
     
 - **GET ALL MAKANAN**
-  * URL ROUTE : /makanan/
+  * URL ROUTE : /makanan
   * Method : GET
+  * Headers (Middleware)
+    - `Authorization` : `Bearer Token`
+    - `Pagination (note: if want to change page with route format: '/makanan?page=()&size=2' )`
   * Response : 
   
     - Status : 200 (Success)
@@ -240,6 +243,8 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
 - **GET MAKANAN BY ID**
   * URL Route : /makanan/:id
   * Method : GET
+  * Headers (Middleware)
+    - `Authorization` : `Bearer Token`
   * Response : 
 
     - Status : 200 (Success)
