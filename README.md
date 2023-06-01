@@ -227,16 +227,43 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
      "success": true,
      "statusCode": 200,
      "msg": "Berhasil mendapatkan data semua makanan",
-     "makanan": {
-         "id": "food-bz5XKXqmo_",
-         "name_food": "Oatmeal Instan (100 g)",
-         "kalori": "91",
-         "protein": "2.46",
-         "lemak": "1.2",
-         "sodium": "122",
-         "link_nutrisi": "https://www.fatsecret.co.id/kalori-gizi/umum/oatmeal-instan?portionid=53170&portionamount=100,000",
-         "link_resep": "https://www.sehatq.com/review/variasi-resep-oatmeal-antibosan-untuk-turunkan-berat-badan"
-       }
+     "response": {
+        "totalItems": 7,
+        "Makanan": [
+            {
+                "id": "food-5gdAyDQ_8a",
+                "name_food": "Sate Padang",
+                "kalori": "870",
+                "protein": "569",
+                "lemak": "596",
+                "sodium": "2000",
+                "link_nutrisi": "https://www.sate.com",
+                "link_resep": "https://www.sate.com"
+            },
+            {
+                "id": "food-bz5XKXqmo_",
+                "name_food": "Oatmeal Instan (100 g)",
+                "kalori": "91",
+                "protein": "2.46",
+                "lemak": "1.2",
+                "sodium": "122",
+                "link_nutrisi": "https://www.fatsecret.co.id/kalori-gizi/umum/oatmeal-instan?portionid=53170&portionamount=100,000",
+                "link_resep": "https://www.sehatq.com/review/variasi-resep-oatmeal-antibosan-untuk-turunkan-berat-badan"
+            },
+            {
+                "id": "food-fexF6ed9yr",
+                "name_food": "Rawon Babi",
+                "kalori": "800",
+                "protein": "399",
+                "lemak": "888",
+                "sodium": "290",
+                "link_nutrisi": "https://www.rawon.com",
+                "link_resep": "https://www.rawon.com"
+            }
+        ],
+        "totalPages": 3,
+        "currentPage": 0
+      }
     }
     ```
 
