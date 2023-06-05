@@ -1,7 +1,11 @@
 # Projek Capstone (HealthyMe-C23-PC663)
 Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesuai keinginanmu) - C23-PC663
 ---
-### ( Ini adalah Repository UTAMA dan hanya berisi file README dan Penjelasan Project, jika ingin melihat file atau dokumentasi REPO, bisa dilihat sesuai dengan branch-nya. )
+### Ini adalah Repository UTAMA dan hanya berisi file README dan Penjelasan Project, jika ingin melihat file atau dokumentasi REPO, bisa dilihat sesuai dengan branch-nya. 
+Branch :
+* Master = Cloud Computing
+* Model = Machine Learning
+* Android = Mobile Development
 ---
 This project aims to address the critical issue of stunting in Indonesia, caused by prolonged inadequate nutrient intake and insufficient awareness among the population about balanced nutrition. The project will create a nutrition detection and consultation app to accurately monitor nutritional balance, provide recommendations on healthy food choices and exercise, and facilitate online consultations to achieve optimum health and well-being.
 ---
