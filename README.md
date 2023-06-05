@@ -7,6 +7,7 @@ Branch :
 * Model = Machine Learning
 * Android = Mobile Development
 ---
+### IDE Project
 This project aims to address the critical issue of stunting in Indonesia, caused by prolonged inadequate nutrient intake and insufficient awareness among the population about balanced nutrition. The project will create a nutrition detection and consultation app to accurately monitor nutritional balance, provide recommendations on healthy food choices and exercise, and facilitate online consultations to achieve optimum health and well-being.
 ---
 ### **Team Member**
