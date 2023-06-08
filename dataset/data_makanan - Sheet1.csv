@@ -1,0 +1,73 @@
+No,Nama_Makanan,Kategori,Kalori,Protein(g),Lemak(g),Sodium(mg)
+1,Oatmeal Instan (100 g),dissert,91,"2,46","1,2",122
+2,Ketoprak (1 Porsi),Vegetarian,402,"15,59","15,34",391
+3,Bubur Kacang Hijau (1 Porsi),dissert,108,"3,54","3,06",46
+4,Ikan Panggang (1 Porsi),seafood,142,"24,79","3,89",402
+5,Ayam Panggang (1 Porsi - 85 g),daging,201,"23,01","11,46",344
+6,Tofu,vegetarian,100,11,11,17.6
+7,Urap (100 g),vegetarian,112,"2,32","7,65",251
+8,Nasi Merah (100 g),vegetarian,110,"2,56","0,89",301
+9,Kacang Panggang (100 g),vegetarian,151,"5,54","5,15",422
+10,Pisang (1 Potong),vegetarian,112,"1,37","0,42",1
+12,Udang Panggang (100 g),seafood,154,"24,47","5,03",512
+13,Cumi Asin (100 g),seafood,195,"42,16","1,59",4717
+14,Siomay Ikan (100 g),seafood,160,10,5,1290
+15,Siomay Ayam (100 g),daging,200,13,9,600
+16,Kepiting Panggang (100 g),seafood,136,"18,91","6,24","5,39"
+17,Kerang Dara (100 g),seafood,148,"26,17","2,1",134
+18,Wafel Polos (100 g),dissert,310,"7,3","9,55",720
+19,Gado-Gado (100 g),vegetarian,132,"7,14","7,41",126
+20,Tumis Daun Pepaya (100 g),vegetarian,95,"8,05",2,213
+21,Tumis Brokoli (1 Porsi),vegetarian,79,"3,49","0,52",130
+22,Beef Patty (1 Porsi),daging,230,"18,88","13,69",582
+23,Tahu Telur (1 Porsi),daging,203,"14,7","14,97",2413
+24,Jagung Manis Kuning (100 g),vegetarian,86,"3,22","1,18",15
+25,Bubur Jagung (1 Porsi),vegetarian,73,"1,72","0,23",212
+26,Roti Gandum Panggang (1 Porsi),dissert,68,"2,39","1,06",138
+27,Roti Kismis Panggang (1 Porsi),dissert,71,"2,06","1,15",102
+28,Lele Goreng (100 g),seafood,105,"18,47","2,85",50
+29,Salmon Panggang (100 g),seafood,171,"23,97","7,56",467
+30,Mangut Lele (1 Porsi),seafood,204,"15,33","12,76",335
+31,Salad Kentang (1 Mangkok),vegetarian,358,"6,7","20,5",1322
+32,Bakso Ayam (1 Porsi),daging,174,"20,94","6,07",477
+33,Daging Sapi Giling (100 g),daging,276,"25,35","18,58",400
+34,Sup Sayur (100 g),vegetarian,72,2.12,"1,93",827
+35,Salad Buah (1 cup - 95 g),dissert,54,0.63,0.81,5
+36,Sandwich Salad Tuna (1 Porsi),"vegetarian,seafood",287,19.01,7.17,783
+37,Greek Yogurt (100 g),dissert,110,5,8,50
+38,Sup Ayam Jahe (1 Porsi),daging,75,4.05,2.46,1106
+39,Steak Tempe (100 gr),vegetarian,179,11.76,9.25,304
+40,Sop Buntut (1 Porsi),daging,68,"2,71","2,46",1166
+41,Kalkun Panggang (100 g),daging,170,"29,32","4,97",70
+43,Sayur Bayam (100 g),vegetarian,36,"0,37","7,64",162
+44,Cap Cay (100 g),vegetarian,67,"2,59","9,67","1,58"
+45,Pecel (100 g),vegetarian,463,"30,38","40,04",23
+46,Bakso Sapi (100 g),daging,202,"13,16","7,58",478
+47,Foie gras (100 g),daging,462,"11,4","43,8",697
+48,Buncis (100 g),vegetarian,31,"1,82","0,12",6
+49,Kacang Hitam (100 g),vegetarian,91,"6,03","0,29",384
+50,Buah Pir (100 g),dissert,58,"0,38","0,12",1
+51,Salad Ikan Tuna (100 g),seafood,187,"16,04","9,26",402
+52,Sup Tomat (100 g),vegetarian,42,"1,25","1,2",289
+53,Opor Ayam (100 g),daging,163,"16,53","8,6",219
+54,Sayur Lodeh (100 g),vegetarian,68,"2,78","3,95",204
+55,Keju Cheddar (100 g),dissert,403,"24,9","33,14",621
+56,Krim Keju (100 g),dissert,349,"7,55","34,9","2,96"
+57,Kwetiau Ayam (1 Porsi),daging,322,"9,9","9,43",2387
+58,Sup Telur Pedas (1 Porsi),daging,382,"10,12","32,01",1366
+59,Stim Ikan Ala Chinese (1 Porsi),seafood,134,"23,49","2,47",1567
+60,Mapo Tofu (1 Porsi),vegetarian,261,"18,16","16,34",699
+61,Mie Shirataki Soto (1 Porsi),vegetarian,307,"15,3","12,68",759
+62,Dimsum Diet (1 Porsi),daging,52,"3,67","1,53",300
+63,Pancake Naga (1 Porsi),,334,"17,07","9,35",72
+64,Cauliflower Fried Rice (1 Porsi),,184,"11,36","6,56",626
+65,Chicken Tandoori (1 Porsi),,218,"17,4","12,81",326
+66,Makaroni Ayam (1 Porsi),,147,"8,92","3,8",547
+67,Omelet Bayam (1 Porsi),,179,8,"13,65",680
+68,Klepon Ubi (1 Porsi),,125,"1,01","0,04",38
+69,Bola Ikan Udang Wortel (1 Porsi),,30,"4,08","0,9",60
+70,Tahu Lumpia (1 Porsi),,43,"2,72","1,36",444
+71,Perkedel Tahu Bawang (1 Porsi),,42,"2,4","3,44",11
+72,Nasi Goreng Oatmeal (1 Porsi),,336,"7,7","12,31",1656
+73,Tahu Gejrot (1 Porsi),,200,"7,2","8,87",678
+74,Cireng Jamur (1 Porsi),,63,"1,16","2,26",325
