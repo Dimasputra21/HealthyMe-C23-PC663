@@ -5,8 +5,9 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
 
 ## How to Use
 - in Local host you can run on NodeJs Environment with local IP and port 5000 http://localhost:5000
-- Public Domain : https://healthyme-auth.et.r.appspot.com atau https://healthyme-projectc23.appspot.com
-
+- Public Domain : 
+  - App Engine : https://healthyme-auth.et.r.appspot.com atau https://healthyme-projectc23.appspot.co
+  - Cloud Run : https://backenduser-4qh7a77q2a-et.a.run.app
 ---
 
 ## Endpoint URL Route (Dokumentasi), (untuk dokumentasi versi POSTMAN bisa dilihat disini : .. )
