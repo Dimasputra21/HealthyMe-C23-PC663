@@ -9,9 +9,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
   * URL Route : /register/
   * Method : POST
   * Request Body : 
-    * `name` as STRING
-    * `email` as STRING (unique)
-    * `password` as STRING
+    * `Nama_Makanan` as STRING
                    
   * Response : 
     - Status : 200 (Success)
