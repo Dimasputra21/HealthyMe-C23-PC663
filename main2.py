@@ -45,12 +45,10 @@ def preprocess_data(makanan, users):
 @app.route("/", methods=['GET'])
 def root():
     if request.method == 'GET':
-        return 'API INI BERJALAN DENGAN SUKSES'
+        return 'API Model ML Success, Siap Digunakan'
 
-@app.route("/recommendation", methods=['GET', 'POST'])
+@app.route("/recommendation", methods=['POST'])
 def predict():
-    if request.method == 'GET':
-       return 'Response Success'
     if request.method == 'POST':
         # Memeriksa tipe konten permintaan
         if request.headers['Content-Type'] != 'application/json':
