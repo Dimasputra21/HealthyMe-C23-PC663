@@ -49,7 +49,7 @@ def root():
     if request.method == 'GET':
         return 'API INI BERJALAN DENGAN SUKSES'
 
-@app.route("/recommendation", methods=['GET', 'POST'])
+@app.route("/predict2", methods=['GET', 'POST'])
 def predict():
     if request.method == 'GET':
        return 'Response Success'
