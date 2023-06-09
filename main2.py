@@ -47,7 +47,7 @@ def root():
     if request.method == 'GET':
         return 'API Model ML Success, Siap Digunakan'
 
-@app.route("/recommendation", methods=['POST'])
+@app.route("/predict2", methods=['POST'])
 def predict():
     if request.method == 'POST':
         # Memeriksa tipe konten permintaan
