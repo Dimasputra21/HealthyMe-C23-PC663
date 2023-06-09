@@ -1,9 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 import numpy as np
 import pandas as pd
-import seaborn as sns
 import tensorflow as tf
-import matplotlib.pyplot as plt
 # %matplotlib inline
 from sklearn.model_selection import train_test_split
 
@@ -14,19 +12,19 @@ def load_model():
     try:
         #memuat model
         # model = tf.keras.models.load_model('')
-        model = tf.lite.Interpreter(model_path='model/')
+        model = tf.lite.Interpreter(model_path='model.tflite')
         return model
     except Exception as e:
         #Penanganan kesalahan jika model tidak dapat dimuat
-        return None
+        return jsonify({
+            "Model Tidak Terbaca"
+        })
 
-makanan = pd.read_csv('dataset/Dataset_Nutrisi_Makanan.csv')
-users = pd.read_csv('dataset/data_user.csv')
+makanan = pd.read_csv('Dataset_Nutrisi_Makanan.csv')
+users = pd.read_csv('data_user(2).csv')
+print(users.columns)
 
 def preprocess_data(makanan, users):
-    makanan = pd.read_csv('dataset/Dataset_Nutrisi_Makanan.csv')
-    users = pd.read_csv('dataset/data_user.csv')
-
     Makanan = tf.data.Dataset.from_tensor_slices(dict(makanan))
     Users = tf.data.Dataset.from_tensor_slices(dict(users))
 
@@ -49,7 +47,7 @@ def root():
     if request.method == 'GET':
         return 'API INI BERJALAN DENGAN SUKSES'
 
-@app.route("/predict2", methods=['GET', 'POST'])
+@app.route("/recommendation", methods=['GET', 'POST'])
 def predict():
     if request.method == 'GET':
        return 'Response Success'
@@ -85,20 +83,29 @@ def predict():
                 'Error': 'Gagal memuat model'
             }), 500
 
+        model.allocate_tensors()
+
+        input_index = model.get_input_details()[0]['index']
+        output_index = model.get_output_details()[0]['index']
+         
         # Menggabungkan data input dengan dataset pengguna
-        input_data = pd.DataFrame({'Nama_Makanan': [Nama_Makanan]})
-        merged_Data = input_data.merge(users, on='user_id', how='left')
+        input_data_merged = pd.DataFrame({'Nama_Makanan': [Nama_Makanan]})
+        input_data_merged['user_id'] = input_data_merged['Nama_Makanan'].map(users.set_index('Nama_Makanan')['user_id'])
+        merged_Data = pd.merge(input_data_merged, users, on='Nama_Makanan', how='left')
 
         # Memilih fitur-fitur yang akan digunakan untuk prediksi
         features = ['Nama_Makanan']
         selected_data = merged_Data[features]
 
-        preprocessed_data = preprocess_data(selected_data)
-
-        recommendation_makanan = model.predict(preprocessed_data)
+        preprocessed_data = preprocess_data(makanan, selected_data)
+        input_data_array = np.array(preprocessed_data, dtype=np.float32)
+        model.set_tensor(input_index, input_data_array)
+        model.invoke()
+        output_data = model.get_tensor(output_index)
+        recommendation_makanan = output_data.tolist()
 
         return jsonify ({
-            'rekomendasi_makanan': recommendation_makanan.tolist()
+            'rekomendasi_makanan': recommendation_makanan
         })      
 
 if __name__  == '__main__':
