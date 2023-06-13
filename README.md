@@ -6,7 +6,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
 ---
 ## Endpoint URL Route (Dokumentasi)
 - **REGISTER**
-  * URL Route : /register/
+  * URL Route : /predict2/
   * Method : POST
   * Request Body : 
     * `Nama_Makanan` as STRING
@@ -15,23 +15,15 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
     - Status : 200 (Success)
     ```
     {
-      "success": true,
-      "statusCode": 200,
-      "msg": "Register Sukses"
-    }
-    ```
-    - Status : 400 (Bad Request)
-    ```
-    {
-     "success": false,
-     "statusCode": 400,
-     "msg": "Mohon isi semua kolom!"
+    "Nama Makanan": {
+        "satu": "pisang (100 g)",
+        "dua": "Pir (100 g)",
+        "tiga": "Semangka (100 g)"
+       }
     }
     ```
     ```
     {
-     "success": false,
-     "statusCode": 400,
-     "msg": "Email sudah terdaftar, mohon pakai email lain!",
+    "Nama Makanan": "Mie Shirataki (100 g)"
     }
     ```
