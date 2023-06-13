@@ -53,7 +53,9 @@ def predict():
         # Memeriksa tipe konten permintaan
         if request.headers['Content-Type'] != 'application/json':
             return jsonify({
-                'Error': 'Masukkan Data dalam bentuk JSON'
+                "success": false,
+                "statusCode": 400,
+                "msg": "Masukkan Data dalam bentuk JSON"
             }), 400
         
         # Mengambil data JSON dari permintaan
@@ -67,7 +69,9 @@ def predict():
         # Memeriksa keberadaan dan format data yang diperlukan
         if 'Nama_Makanan' not in data:
             return jsonify({
-                'Error': 'Isi Data Makanan'
+                "success": false,
+                "statusCode": 400,
+                "msg": "Mohon isi kolom nama makanan!"
             }), 400
         
         # Mendapatkan nilai-nilai dari data input
@@ -78,7 +82,9 @@ def predict():
 
         if model is None:
             return jsonify({
-                'Error': 'Gagal memuat model'
+                "success": false,
+                "statusCode": 500,
+                "msg": "Gagal Memuat Model!"
             }), 500
 
         model.allocate_tensors()
@@ -103,7 +109,7 @@ def predict():
         recommendation_makanan = output_data.tolist()
 
         return jsonify ({
-            'rekomendasi_makanan': recommendation_makanan
+            "Nama_Makanan": recommendation_makanan
         })      
 
 if __name__  == '__main__':
