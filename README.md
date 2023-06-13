@@ -27,3 +27,11 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
     "Nama Makanan": "Mie Shirataki (100 g)"
     }
     ```
+    - Status : 400 (Bad Request)
+    ```
+    {
+    "success": false,
+    "statusCode": 400,
+    "msg": "Mohon isi kolom nama makanan!"
+    }
+    ```
