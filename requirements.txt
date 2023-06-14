@@ -2,3 +2,4 @@ tensorflow==2.12.0
 Flask==2.3.2
 numpy==1.23.5
 pandas==2.0.1
+pathlib==1.0.1
