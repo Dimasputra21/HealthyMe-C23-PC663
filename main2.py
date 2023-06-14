@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, render_template
 import numpy as np
 import pandas as pd
 import tensorflow as tf
+import pathlib
 # %matplotlib inline
 from sklearn.model_selection import train_test_split
 
@@ -12,7 +13,8 @@ def load_model():
     try:
         #memuat model
         # model = tf.keras.models.load_model('')
-        model = tf.lite.Interpreter(model_path='model.tflite')
+        model = pathlib.path(model_path='model.tflite')
+        model.write_bytes(tflite_model)
         return model
     except Exception as e:
         #Penanganan kesalahan jika model tidak dapat dimuat
