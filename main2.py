@@ -13,7 +13,7 @@ def load_model():
     try:
         #memuat model
         # model = tf.keras.models.load_model('')
-        model = pathlib.path(model_path='model.tflite')
+        model = pathlib.path(model_path='model/model.tflite')
         model.write_bytes(tflite_model)
         return model
     except Exception as e:
