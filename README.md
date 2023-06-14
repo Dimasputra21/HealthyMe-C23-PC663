@@ -15,15 +15,6 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
     - Status : 200 (Success)
     ```
     {
-    "Nama Makanan": {
-        "satu": "pisang (100 g)",
-        "dua": "Pir (100 g)",
-        "tiga": "Semangka (100 g)"
-       }
-    }
-    ```
-    ```
-    {
     "Nama Makanan": "Mie Shirataki (100 g)"
     }
     ```
