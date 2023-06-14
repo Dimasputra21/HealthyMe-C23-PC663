@@ -1,0 +1,23 @@
+user_id,umur,Nama_Makanan,ingredient_makanan
+user-00123456,50,Oatmeal Instan (100 g),oatmeal
+user-00234567,30,Ketoprak-Bumbu Kacang (1 Porsi) ,Bumbu Kacang
+user-00345678,40,Bubur Kacang Hijau (1 Porsi),Bubur
+user-00456789,30,Ikan Panggang (1 Porsi),Seafood
+user-00567900,27,Ayam Panggang (1 Porsi - 85 g),Ayam 
+user-00679011,63,Tofu,Tahu 
+user-00790122,21,Urap Sayur(100 g),Sayuran
+user-00901233,19,Nasi Merah (100 g),Nasi
+user-01012344,29,Kacang Panggang (100 g),Kacang
+user-01123455,18,Pisang (1 Potong),Buah
+user-01234566,15,Gado-Gado (100 g),"Bumbu Kacang,Sayuran"
+user-01345677,22,Beef Patty (1 Porsi),"Roti, Daging"
+user-01456788,25,Roti Kismis Panggang (1 Porsi),Roti
+user-01567899,27,Salad Kentang (1 Mangkok),Salad
+user-01679010,46,Bakso Ayam (1 Porsi),Bakso
+user-01790121,37,Daging Sapi Giling (100 g),Daging
+user-01901232,56,Greek Yogurt (100 g),Dissert
+user-02012343,55,Steak Tempe (100 gr),Tempe
+user-02123454,30,Sop Buntut (1 Porsi),Daging
+user-02234565,39,Sup Telur Pedas (1 Porsi),Telur
+user-02345676,36,Mie Shirataki Soto (1 Porsi),Mie
+user-02456787,34,Cireng Jamur (1 Porsi),Jamur
