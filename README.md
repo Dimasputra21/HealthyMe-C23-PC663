@@ -10,7 +10,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
   - Cloud Run : https://backenduser-4qh7a77q2a-et.a.run.app
 ---
 
-## Endpoint URL Route (Dokumentasi), (untuk dokumentasi versi POSTMAN bisa dilihat disini : .. )
+## Endpoint URL Route (Dokumentasi), (untuk dokumentasi versi POSTMAN bisa dilihat disini : https://documenter.getpostman.com/view/26430352/2s93m8zgLP )
 - **REGISTER**
   * URL Route : /register/
   * Method : POST
