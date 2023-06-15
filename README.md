@@ -1,7 +1,8 @@
 # Projek Capstone (HealthyMe-C23-PC663) - BackEnd API untuk Model Machine Learning
 Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesuai keinginanmu) - C23-PC663
 ---
-## How to Access:
+## How to Access / use:
+- in Local host you can run on Python Environment with local IP and port 8000 http://localhost:8000
 - Public Domain : https://healthyme2-4qh7a77q2a-et.a.run.app
 ---
 ## Endpoint URL Route (Dokumentasi), (untuk dokumentasi versi POSTMAN bisa dilihat disini : https://documenter.getpostman.com/view/26430352/2s93m8zgLP )
