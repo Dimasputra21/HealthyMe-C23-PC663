@@ -4,7 +4,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
 ## How to Access:
 - Public Domain : https://healthyme2-4qh7a77q2a-et.a.run.app
 ---
-## Endpoint URL Route (Dokumentasi)
+## Endpoint URL Route (Dokumentasi), (untuk dokumentasi versi POSTMAN bisa dilihat disini : https://documenter.getpostman.com/view/26430352/2s93m8zgLP )
 - **REGISTER**
   * URL Route : /predict2/
   * Method : POST
