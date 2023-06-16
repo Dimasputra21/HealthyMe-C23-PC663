@@ -6,7 +6,7 @@ Branch :
 * master = Cloud Computing (Back-End)
 * model1 = Machine Learning
 * master-ml2 = API Model ML
-* android = Mobile Development
+* android-2 = Mobile Development
 ---
 ### **Team Member**
 |**ID Member**|            **Nama**            |        **Asal Universitas**          |
