@@ -20,5 +20,5 @@ Branch :
 ---
 |        **TEMA**      |     **JUDUL DAN IDE**   |        **DETAIL IDE**                |
 |----------------------|:-----------------------:|:------------------------------------:|         
-| Human HealthCare and Living Welbeings | "HealthyMe" Aplikasi perekomendasi makanan sehat sesuai keinginanmu | Aplikasi HealthyMe merupakan aplikasi untuk membantu anda mencari makanan favorit anda berdasarkan kesehatan anda(indeks massa), aplikasi ini akan membantu anda mencari makanan yang anda sukai sembari mendapatkan tubuh yang sehat |
+| Human HealthCare and Living Welbeings | "HealthyMe" Aplikasi perekomendasi makanan sehat sesuai keinginanmu | Aplikasi HealthyMe merupakan aplikasi untuk membantu anda mencari makanan favorit anda berdasarkan kesehatan anda(indeks massa / BMI), aplikasi ini akan membantu anda mencari makanan yang anda sukai sembari mendapatkan tubuh yang sehat |
 
