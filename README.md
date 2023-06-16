@@ -4,8 +4,8 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
 ### Ini adalah Repository UTAMA dan hanya berisi file README dan Penjelasan Project, jika ingin melihat file atau dokumentasi REPO, bisa dilihat sesuai dengan branch-nya. 
 Branch :
 * master = Cloud Computing (Back-End)
-* master-ml2 = API Model ML
 * model1 = Machine Learning
+* master-ml2 = API Model ML
 * android = Mobile Development
 ---
 ### **Team Member**
