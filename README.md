@@ -16,7 +16,7 @@ Repository Projek Capstone HealthyMe (Aplikasi perekomendasi makanan sehat sesua
     - Status : 200 (Success)
     ```
     {
-    "Nama Makanan": "Mie Shirataki (100 g)"
+    "Nama_Makanan": "Mie Shirataki (100 g)"
     }
     ```
     - Status : 400 (Bad Request)
